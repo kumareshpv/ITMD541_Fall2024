@@ -23,6 +23,11 @@
   outline: 2px solid #000;
 }
 
+#flex-section1 .btn:hover {
+  background-color: #eee;
+  color: #cc0000;
+}
+
 /* Flexbox Responsiveness */
 @media (max-width: 600px) {
   #flex-section1 ul {
@@ -64,6 +69,7 @@
   background-color: #f5f5f5; /* Light background color change on hover */
   transform: translateY(-5px); /* Slight lift on hover */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Adding depth with shadow */
+  color: #cc0000;
 }
 
 @media (max-width: 600px) {
@@ -103,6 +109,7 @@
   background-color: #e0e0e0; /* Darker background on hover */
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Adding shadow on hover */
+  color: #cc0000;
 }
 
 @media (max-width: 600px) {
@@ -132,6 +139,7 @@
   background-color: #eee; /* Slight color change on hover */
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adding shadow on hover */
+  color: #cc0000;
 }
 
 @media (max-width: 768px) {
@@ -215,6 +223,7 @@
   background-color: #eee; /* Slight background color change on hover */
   transform: scale(1.05); /* Slight zoom on hover */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Adding shadow on hover */
+  color: #cc0000;
 }
 
 @media (max-width: 768px) {
