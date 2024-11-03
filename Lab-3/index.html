@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="tipForm">
+      <h3>ITMD 541 - Lab 3 - Kumaresh Pendiyala Venkatesh</h3>
+      <h1>TIP CALCULATOR</h1>
+      <label for="billTotal">Bill Total:</label>
+      <input type="text" id="billTotal" placeholder="Enter bill amount" />
+
+      <label for="tipSlider">Tip:</label>
+      <input type="range" id="tipSlider" min="0" max="100" value="15" />
+
+      <label for="tipPercentage">Tip Percentage:</label>
+      <input type="text" id="tipPercentageDisplay" disabled />
+
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="USD">USD ($)</option>
+        <option value="INR">INR (₹)</option>
+        <option value="JPY">JPY (¥)</option>
+      </select>
+
+      <div id="conversionRates">
+        <p>Conversion Rates:</p>
+        <p>$1 = ₹84.07 | $1 = ¥149.34</p>
+      </div>
+
+      <label for="tipAmount">Tip Amount:</label>
+      <input type="text" id="tipAmount" disabled />
+
+      <label for="totalWithTip">Total with Tip:</label>
+      <input type="text" id="totalWithTip" disabled />
+
+      <p id="errorMsg"></p>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
