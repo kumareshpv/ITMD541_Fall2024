@@ -48,15 +48,25 @@ currencySelect.addEventListener("change", calculateTip); // Recalculate tip when
 // Validate bill total input with regex
 function validateBillInput() {
   const validInput = /^[0-9]*\.?[0-9]*$/; // Regex for numbers and a single decimal point
+
+  // Check if input is valid according to the regex pattern
   if (!validInput.test(billTotalInput.value)) {
-    billTotalInput.value = billTotalInput.value.slice(0, -1); // Remove last character if invalid
+    errorMsg.textContent =
+      "Please enter a valid positive number for the bill total.";
+    return;
+  } else if (parseFloat(billTotalInput.value) < 0) {
+    // Display error if negative number is entered
+    errorMsg.textContent =
+      "Negative numbers are not allowed. Please enter a positive amount.";
+    return;
+  } else {
+    errorMsg.textContent = ""; // Clear any error messages for valid input
   }
 
   // If input is empty, reset outputs
   if (billTotalInput.value === "") {
     tipAmountOutput.value = "";
     totalWithTipOutput.value = "";
-    errorMsg.textContent = "";
   }
 }
 
